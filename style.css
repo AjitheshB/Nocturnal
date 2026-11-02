@@ -127,27 +127,44 @@ header, main {
 
 .hero {
     width:100%;
-
+    padding:100px 0 90px;
 
     padding-top:20px;
     text-align:center;
     align-items:center;
 }
 
+.hero-content {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    width:min(1000px, 88%);
+    margin:0 auto;
+}
+
 .hero-content span {
     color:var(--orange);
-    font-family:'Cinzel', serif;
     font-style:italic;
 
 }
 
 .hero h1 {
     margin-bottom:40px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size:80px;
 }
 
 .hero-label {
     font-weight:600;
     font-family:'Cinzel', serif;
+
+    letter-spacing:3px;
+    color:var(--orange-light);
+
+    margin-bottom:25px;
 }
 
 .hero-desc {
@@ -158,4 +175,107 @@ header, main {
     border-radius:16px;
     outline:3px double rgba(255,255,255);
     outline-offset: 6px;
+
+    margin-top:30px;
+}
+
+.explore-btn, .about-btn {
+    
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding: 12px 24px;
+
+    font-size:14px;
+    font-weight:400;
+
+    border-radius:14px;
+    transition: all 0.25s ease;
+
+    font-family: monospace;
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+.explore-btn {
+    background: var(--orange);
+    color:black;
+}
+
+.explore-btn:hover {
+    background:var(--orange-light);
+    transform: translateY(-3px);
+}
+
+.about-btn {
+    margin-left:14px;
+    border:1px solid var(--border);
+    color:var(--text);
+}
+
+.about-btn:hover {
+    border-color: var(--orange);
+    color: var(--orange-light)
+}
+
+.hero-btns {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:60px;
+}
+
+hr {
+    margin:0 auto;
+}
+
+.discover, .reccomended, .about {
+    margin:60px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.section-label {
+    font-size:14px;
+    font-family:'Cinzel',serif;
+}
+
+.section-head h2 {
+    margin-top:10px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:40px;
+}
+
+.section-head span {
+    color:var(--orange);
+    font-style:italic;
+}
+
+.abt-content {
+    font-family:'DM Sans', sans-serif;
+    line-height:1.6;
+    max-width:600px;
+
+    font-weight:400;
+    margin-top:15px;
+}
+
+.abt-content p {
+    padding:15px;
+}
+
+.abt-footer {
+    margin-top:40px;
+
+    font-weight:700;
+    font-family:'Cinzel',serif;
+    color:var(--orange);
 }
