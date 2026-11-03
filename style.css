@@ -8,6 +8,7 @@
     --orange: #d96c2e;
     --orange-light: #f08a43;
     --red: #83293d;
+    --purple: #A78BFA;
 
     --text: #f1e7dc;
     --muted: #aaa0a6;
@@ -246,6 +247,8 @@ hr {
 .section-label {
     font-size:14px;
     font-family:'Cinzel',serif;
+    color:var(--orange-light);
+    letter-spacing: 3px;
 }
 
 .section-head h2 {
@@ -289,7 +292,7 @@ hr {
     grid-template-columns: repeat(4, minmax(0,1fr));
     gap:35px 24px; 
 
-    margin:40px 20px;
+    margin:40px auto;
 
 }
 
@@ -303,7 +306,9 @@ hr {
     outline: 1px double var(--orange-light);
     outline-offset:6px;
 
-    margin:20px;
+    margin:0px auto;
+    margin-bottom:20px !important;
+    max-height:400px;
 }
 
 .movie-rating {
@@ -317,9 +322,33 @@ hr {
     font-style:italic;
     font-size:30px;
     margin:12px 0;
+    color:var(--purple);
 }
 
 .movie-genres {
     font-weight:500;
     font-family:monospace;
+}
+
+.discover {
+    width:100%;
+    padding:80px 0;
+    border-top:1px solid var(--purple);
+}
+
+.movie-card {
+    min-width:0;
+    padding:10px;
+
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding-bottom: 40px;
+
+    transition:0.3s ease;
+}
+
+.movie-card:hover {
+    transform:translateY(-6px) scale(1.05);
+    border-color:var(--orange);
 }
