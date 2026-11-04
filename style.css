@@ -351,4 +351,5 @@ hr {
 .movie-card:hover {
     transform:translateY(-6px) scale(1.05);
     border-color:var(--orange);
+
 }

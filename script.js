@@ -4,50 +4,18 @@ lucide.createIcons();
 // MOVIES
 // =========
 
-const movies = [
-    {
-        id:1,
-        title:"The Shining",
-        year:1980,
-        genres: ["Horror", "Thriller"],
-        runtime: 146,
-        rating: 9.2,
-        poster:"assets/posters/theshining.jpg",
-        description: "A writer takes a job at an isolated hotel, where unsettling events begin to unfold..."
-    },
-
-    {
-        id: 2,
-        title: "Coraline",
-        year: 2009,
-        genres: ["Animation", "Fantasy", "Horror"],
-        rating: 9.0,
-        runtime: 100,
-        poster: "assets/posters/coraline.jpg",
-        description: "A young girl discovers a perfect parallel world hiding a secret"
-    },
-
-    {
-        id: 3,
-        title: "Knives Out",
-        year: 2019,
-        genres: ["Mystery", "Comedy", "Crime"],
-        runtime: 130,
-        rating: 8.7,
-        poster: "assets/posters/knivesout.jpg"
-    },
-
-    {
-        id: 4,
-        title: "Obsession",
-        year: 2025,
-        genres: ["Thriller", "Horror", "Romance"],
-        runtime: 109,
-        rating: 7.0,
-        poster: "assets/posters/obsession.jpg",
-        description: "A young man's wish to make his crush fall in love with him takes a dark turn"
-    }
+let movies = [
+    
 ]
+
+async function loadMovies() {
+    const response = await fetch("movielist.json")
+    movies= await response.json()
+
+    displayMovies(movies)
+}
+
+loadMovies()
 
 const movieGrid = document.querySelector("#movie-grid")
 

@@ -1,0 +1,220 @@
+[{
+        "id":1,
+        "title":"The Shining",
+        "year":1980,
+        "genres": ["Horror", "Thriller"],
+        "runtime": 146,
+        "rating": 9.2,
+        "poster":"assets/posters/theshining.jpg",
+        "description": "A writer takes a job at an isolated hotel, where unsettling events begin to unfold..."
+    },
+
+    {
+        "id": 2,
+        "title": "Coraline",
+        "year": 2009,
+        "genres": ["Animation", "Fantasy", "Horror"],
+        "rating": 9.0,
+        "runtime": 100,
+        "poster": "assets/posters/coraline.jpg",
+        "description": "A young girl discovers a perfect parallel world hiding a secret"
+    },
+
+    {
+        "id": 3,
+        "title": "Knives Out",
+        "year": 2019,
+        "genres": ["Mystery", "Comedy", "Crime"],
+        "runtime": 130,
+        "rating": 8.7,
+        "poster": "assets/posters/knivesout.jpg"
+    },
+
+    {
+        "id": 4,
+        "title": "Obsession",
+        "year": 2025,
+        "genres": ["Thriller", "Horror", "Romance"],
+        "runtime": 109,
+        "rating": 7.0,
+        "poster": "assets/posters/obsession.jpg",
+        "description": "A young man's wish to make his crush fall in love with him takes a dark turn"
+    },
+
+    {
+        "id": 5,
+        "title": "Get Out",
+        "year": 2017,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "rating": 7.8,
+        "runtime": 104,
+        "poster": "assets/posters/getout.jpg",
+        "description": "A young man visits his girlfriend's family estate, where a friendly weekend takes an unexpected turn"
+
+    },
+
+    {
+        "id": 6,
+        "title": "Shutter Island",
+        "year": 2010,
+        "genres": ["Mystery", "Thriller", "Psychological"],
+        "rating": 8.2,
+        "runtime": 138,
+        "poster": "assets/posters/shutterisland.jpg",
+        "description": "A US marshal investigates the disappearance of a patient from a remote hospital"
+    },
+
+    {
+        "id": 7,
+        "title": "Hereditary",
+        "year": 2018,
+        "genres": ["Horror","Mystery","drama"],
+        "rating": 7.3,
+        "runtime": 127,
+        "poster": "assets/posters/hereditary.jpg",
+        "description": "After a family tragedy, a family begins uncovering disturbing secrets about its ancestry."
+    },
+
+    {
+        "id": 8,
+        "title": "The Conjuring",
+        "year": 2013,
+        "genres": ["Horror", "Supernatural", "Mystery"],
+        "rating":7.5,
+        "runtime": 112,
+        "poster": "assets/posters/theconjuring.jpg",
+        "description": "Paranormal investigators help a family experiencing frightening events in their farmhouse"
+    },
+
+    {
+        "id":9,
+        "title": "A Quiet Place",
+        "year": 2018,
+        "genres": ["Horror", "Thriler", "Sci-fi"],
+        "rating": 7.5,
+        "runtime":90,
+        "poster":"assets/posters/aquietplace.jpg",
+        "description": "A family struggles to live in a world inhabited by creatures that hunt by sound"
+    },
+
+    {
+        "id": 10,
+        "title": "The Invisible Man",
+        "year": 2020,
+        "genres":["Horror", "Thriller", "Sci-fi"],
+        "rating":7.1,
+        "runtime": 124,
+        "poster": "assets/posters/theinvisibleman.jpg",
+        "description": "A woman believes her former partner has found a way to stalk her"
+    },
+
+    {
+        "id": 11,
+        "title": "The Substance",
+        "year": 2024,
+        "genres": ["Horror", "Sci-fi", "Drama"],
+        "runtime":141,
+        "rating":8.8,
+        "poster": "assets/posters/thesubstance.jpg",
+        "description": "A fading celebrity takes a mysterious treatment that creates a younger version of herself"
+    },
+
+    {
+        "id":12,
+        "title": "Oddity",
+        "year":2024,
+        "genres": ["Horror", "Mystery", "Supernatural"],
+        "runtime": 98,
+        "rating": 8.5,
+        "poster": "assets/posters/oddity.jpg",
+        "description": "After her twin sisters death, a blind medium searches for the truth behind it"
+    },
+
+    {
+        "id":13,
+        "title":"Longlegs",
+        "year":2024,
+        "genres": ["Horror", "Crime", "Thriller"],
+        "runtime":101,
+        "rating":8.2,
+        "poster":"assets/posters/longlegs.jpg",
+        "description":"An FBI agent investigating a serial killer finds disturbing clues"
+    },
+
+    {
+        "id":14,
+        "title":"Cuckoo",
+        "year":2024,
+        "genres": ["Horror", "Mystery", "Sci-fi"],
+        "runtime":102,
+        "rating":7.9,
+        "poster": "assets/posters/cuckoo.jpg",
+        "description": "A teenager moves to a secluded German resort and finds something unnatural"
+    },
+
+    {
+        "id": 15,
+        "title": "Nosferatu",
+        "year": 2024,
+        "genres": ["Horror", "Gothic", "Fantasy"],
+        "runtime": 132,
+        "rating": 8.6,
+        "poster": "assets/posters/nosferatu.jpg",
+        "description": " A young woman becomes the focus of a terrifying vampire"
+    },
+
+    {
+        "id": 16,
+        "title": "Bring Her Back",
+        "year": 2025,
+        "genres": ["Horror", "Thriler", "Supernatural"],
+        "rating": 8.4,
+        "runtime": 104,
+        "poster": "assets/posters/bringherback.jpg",
+        "description": "A broterh and moster move in with a new foster mother and uncover a disturbing ritual"
+    },
+
+    {
+        "id": 17,
+        "title": "Weapons",
+        "genres": ["Horror", "Mystery", "Thriler"],
+        "year": 2025,
+        "runtime": 128,
+        "rating": 8.7,
+        "poster": "assets/posters/weapons.jpg",
+        "description": "When almost every child in a classroom disappears on the same night, a community tries to uncover what happened"
+    },
+
+    {
+        "id": 18,
+        "title": "When Evil Lurks",
+        "year":2023,
+        "genres": ["Horror", "Supernatural", "Thriler"],
+        "runtime": 99,
+        "rating": 8.5,
+        "poster": "assets/posters/whenevillurks.jpg",
+        "description": "Two brothers find tht a demonic force is spreading through their rural community"
+    },
+
+    {
+        "id": 19,
+        "title": "Sinners",
+        "year": 2025,
+        "genres": ["Horror", "Thriller", "Drama"],
+        "rating" : 9.2,
+        "runtime": 137,
+        "poster": "assets/posters/sinners.jpg",
+        "description": "Twin brothers return to their hometown to start fresh, but a sinister force is waiting for them"
+    },
+
+    {
+        "id": 20,
+        "title": "Companion",
+        "year": 2025,
+        "genres": ["Sci-fi","Horror", "Thriler","Comedy"],
+        "rating": 8.5,
+        "runtime": 97,
+        "poster": "assets/posters/companion.jpg",
+        "description": "A weekend getaway takes a bizarre turn when a shocking discovery changes everything"
+    }
+]
