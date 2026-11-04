@@ -1,0 +1,69 @@
+[
+    {
+        "id":1,
+        "title": "Breaking Bad",
+        "year": 2008,
+        "endyear": 2013,
+        "type": "TV Series",
+        "genres": ["Crime", "Drama", "Thriller"],
+        "episodes": 62,
+        "runtime": 48,
+        "runtimeUnit": "min/episode",
+        "rating": 10.0,
+        "poster": "assets/posters/breakingbad.jpg",
+        "description": "A high school chemistry teacher enters a dangerous criminal world following a life-changing diagnosis, leading to an extraordinary transformation"
+    },
+
+    {
+        "id":2,
+        "title": "The Godfather",
+        "year":1972,
+        "type": "Movie",
+        "genres": ["Crime", "Drama"],
+        "runtime": 175,
+        "runtimeUnit": "min",
+        "rating": 9.8,
+        "poster": "assets/posters/thegodfather.jpg",
+        "description": "The aging patriarch of a powerful family transfers control of his empire to his reluctant son"
+    },
+
+    {
+        "id":3,
+        "title": "Chernobyl",
+        "year": 2019,
+        "type": "Miniseries",
+        "episodes":5,
+        "genres": ["Drama", "Historical", "Thriller"],
+        "runtime":60,
+        "runtimeUnit":"min/episode",
+        "rating":9.7,
+        "poster": "assets/posters/chernobyl.jpg",
+        "description": "An account of the 1986 Chernobyl disaster"
+    },
+
+    {
+        "id":4,
+        "title": "Interstellar",
+        "year": 2014,
+        "type":"Movie",
+        "genres": ["Sci-fi", "Drama", "Adventure"],
+        "runtime":169,
+        "runtimeUnit": "min",
+        "rating":9.6,
+        "poster": "assets/posters/interstellar.jpg",
+        "description": "As Earth finds an uncertain future, a pilot joins a mission to find humanity in a new home"
+    },
+
+    {
+        "id":5,
+        "title": "The Dark Knight",
+        "type":"Movie",
+        "genres": ["Action", "Crime", "Drama"],
+        "year": 2008,
+        "runtimeUnit": "min",
+        "runtime":152,
+        "rating":9.5,
+        "poster": "assets/posters/darkknight.jpg",
+        "description": "Batmin faces his greatest challenge when a chaotic mastermind threatens to plunge Gotham City"
+    }
+]

@@ -1,12 +1,12 @@
 [{
         "id":1,
-        "title":"The Shining",
-        "year":1980,
-        "genres": ["Horror", "Thriller"],
-        "runtime": 146,
-        "rating": 9.2,
-        "poster":"assets/posters/theshining.jpg",
-        "description": "A writer takes a job at an isolated hotel, where unsettling events begin to unfold..."
+        "title":"Resident Evil",
+        "year":2026,
+        "genres": ["Horror", "Sci-fi", "Thriller"],
+        "runtime": 94,
+        "rating": 8.5,
+        "poster":"assets/posters/residentevil.jpg",
+        "description": "A medical courier is caught in a terrifying outbreak, fighting to survive as creatures take over"
     },
 
     {

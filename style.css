@@ -353,3 +353,14 @@ hr {
     border-color:var(--orange);
 
 }
+
+.spl {
+    font-size: 20px !important;
+    font-weight:500 !important;
+    font-family: 'Cormorant Garamound', serif;
+    letter-spacing:1px;
+}
+
+.spl span{
+    color: var(--purple) !important;
+}
