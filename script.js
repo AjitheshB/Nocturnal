@@ -41,7 +41,7 @@ function displayMovies(movieList) {
                 <h3>${movie.title}</h3>
 
                 <p class="movie-yr">
-                    ${movie.year} · ${movie.runtime} 
+                    ${movie.year} · ${movie.runtime} min
                 </p>
 
 
@@ -69,7 +69,7 @@ function displayFav(movieList) {
                     onerror="this.remove()"
                 >
 
-                <span class="fav-rank">
+                <span class="fav-rank ${index === 0 ? 'rank-first' : ''}">
                     ${index + 1}
                 </span>
 
@@ -83,17 +83,21 @@ function displayFav(movieList) {
                     ${movie.type || "Movie"}
                 </span>
 
+                <hr width="25%">
+
                 <h3>${movie.title}</h3>
 
 
                 <p class="fav-desc">
                     ${movie.year}${movie.endYear ? `-${movie.endYear}` : ""}
-                     · ${movie.runtime} ${movie.runtimeUnit || "min"} 
+                     <br> ${movie.runtime} ${movie.runtimeUnit || "min"} 
                 </p>
 
                 <p class="fav-genres">
                     ${movie.genres.join(" · ")}
                 </p>
+                
+                <hr width="30%">
 
                 <p class="fav-descr">
                     ${movie.description || ""}
