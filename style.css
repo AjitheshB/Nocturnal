@@ -359,8 +359,139 @@ hr {
     font-weight:500 !important;
     font-family: 'Cormorant Garamound', serif;
     letter-spacing:1px;
+
+    margin:10px 0 18px;
 }
 
 .spl span{
     color: var(--purple) !important;
+}
+
+
+/* =================
+    FAVORITES
+================== */
+
+.reccomended {
+    width: min(1350px ,90%);
+    margin: 90px auto;
+    padding:60px 35px;
+
+    position:relative;
+    isolation: isolate;
+}
+
+.reccomended::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    width:700px;
+    height:450px;
+
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: radial-gradient() (
+        ellipse,
+        rgba(131,41,61,0.16),
+        transparent 90%
+    );
+
+    pointer-events:none;
+
+}
+
+.reccomended .section-head h2 {
+    font-family: 'Cormorant Garamound', serif;
+    font-size:48px;
+}
+
+
+.reccomended .section-head h2 span {
+    color: var(--orange);
+    font-style: italic;
+}
+
+.favgrid {
+    display:grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    gap:50px;
+
+    width:100%;
+}
+
+.fav-card {
+    min-width: 0;
+
+    background:rgba(27,22,33,0.85);
+
+    border-radius:8px;
+    border:1px solid var(--border);
+
+    overflow:visible;
+
+    transition: all 0.3s ease;
+}
+
+.fav-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--orange);
+
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.4),
+        0 0 18px rgba(217,108,46,0.12);
+}
+
+.fav-poster {
+    position: relative;
+
+    width:100%;
+    aspect-ratio: 2 / 3;
+
+    background: var(--surface-light);
+
+    overflow:visible;
+}
+
+.fav-poster img {
+    position:absolute;
+    right:0;
+    top:0;
+
+    z-index:1;
+
+    width:100%;
+    height:100%;
+
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.fav-card:hover .fav-poster img {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
+
+.fav-rank {
+    position: absolute;
+    bottom:5px;
+    left:-55px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size:125px;
+    font-weight:700;
+    line-height:0.8;
+
+    -webkit-text-stroke: 2px #777;
+
+    color:var(--bg);
+    z-index: 0;
+
+    pointer-events: none;
 }

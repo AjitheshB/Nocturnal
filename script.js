@@ -38,12 +38,12 @@ function displayMovies(movieList) {
                 </span>
             </div>
 
-            <div class="movie-info">
+                <h3>${movie.title}</h3>
+
                 <p class="movie-yr">
-                    ${movie.year} · ${movie.runtime} min
+                    ${movie.year} · ${movie.runtime} 
                 </p>
 
-                <h3>${movie.title}</h3>
 
                 <p class="movie-genres">
                     ${movie.genres.join(" · ")}
@@ -58,7 +58,7 @@ function displayMovies(movieList) {
 const favGrid = document.querySelector("#favgrid")
 
 function displayFav(movieList) {
-    favGrid.innerHTML = movieList.map(movie => `
+    favGrid.innerHTML = movieList.map((movie, index) => `
         <article class="fav-card">
 
             <div class="fav-poster" data-title="${movie.title}">
@@ -69,24 +69,34 @@ function displayFav(movieList) {
                     onerror="this.remove()"
                 >
 
-                <span class="fav-rank>
-                    #${index + 1}
+                <span class="fav-rank">
+                    ${index + 1}
                 </span>
 
-                <span class="movie-rating">
+                <span class="fav-rating">
                     ★ ${movie.rating.toFixed(1)}
                 </span>
             </div>
 
             <div class="fav-info">
-                <p class="movie-yr">
-                    ${movie.year} · ${movie.runtime} min
-                </p>
+                <span class="fav-type">
+                    ${movie.type || "Movie"}
+                </span>
 
                 <h3>${movie.title}</h3>
 
-                <p class="movie-genres">
+
+                <p class="fav-desc">
+                    ${movie.year}${movie.endYear ? `-${movie.endYear}` : ""}
+                     · ${movie.runtime} ${movie.runtimeUnit || "min"} 
+                </p>
+
+                <p class="fav-genres">
                     ${movie.genres.join(" · ")}
+                </p>
+
+                <p class="fav-descr">
+                    ${movie.description || ""}
                 </p>
 
             </div>

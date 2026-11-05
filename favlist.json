@@ -3,7 +3,7 @@
         "id":1,
         "title": "Breaking Bad",
         "year": 2008,
-        "endyear": 2013,
+        "endYear": 2013,
         "type": "TV Series",
         "genres": ["Crime", "Drama", "Thriller"],
         "episodes": 62,
