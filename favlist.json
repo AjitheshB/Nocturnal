@@ -2,6 +2,7 @@
     {
         "id":1,
         "title": "Breaking Bad",
+        "banner": "assets/posters/breakingbadbanner.jpg",
         "year": 2008,
         "endYear": 2013,
         "type": "TV Series",

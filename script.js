@@ -59,7 +59,7 @@ const favGrid = document.querySelector("#favgrid")
 
 function displayFav(movieList) {
     favGrid.innerHTML = movieList.map((movie, index) => `
-        <article class="fav-card">
+        <article class="fav-card" onclick="toggleFav(this)">
 
             <div class="fav-poster" data-title="${movie.title}">
                 <img
@@ -104,8 +104,27 @@ function displayFav(movieList) {
                 </p>
 
             </div>
+
+            <div class="fav-featured">
+                <div class="fav-banner">
+                    <img
+                        src= "${movie.banner}"
+                        alt = "${movie.title} banner"
+                        class="fav-banner-img"
+                    >
+
+                    <div class="fav-banner-content">
+                        <h1>${movie.title}</h1>
+                        <p>${movie.description}</p>
+                    </div>
+                </div>
+            </div>
         </article>
         `).join("")
     
 }
 loadMovies()
+
+function toggleFav(card) {
+    card.classList.toggle("expanded")
+}

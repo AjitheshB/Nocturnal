@@ -424,7 +424,12 @@ hr {
 }
 
 .fav-card {
+    cursor:pointer;
+    position:relative;
+    isolation: isolate;
+    
     min-width: 0;
+    max-height:750px;
 
     background:rgba(27,22,33,0.85);
 
@@ -433,6 +438,7 @@ hr {
 
     overflow:visible;
 
+    z-index:1;
     transition: all 0.3s ease;
 }
 
@@ -592,4 +598,143 @@ hr {
 
 .fav-descr {
     margin-top:8px;
+    transition:all 0.2s ease;
+}
+
+.fav-extra {
+    display:grid;
+    grid-template-rows: 0fr;
+    opacity:0;
+    transition: all 0.3s ease;
+}
+
+.fav-extra-inner {
+    overflow:hidden;
+}
+
+.fav-card.expanded .fav-extra {
+    grid-template-rows:1fr;
+    opacity:1;
+}
+
+.fav-card.expanded {
+    width:100%;
+    z-index:10;
+}
+
+.fav-card.expanded::before {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+
+    width:85vw;
+
+    border-radius:inherit;
+
+    z-index:-1;
+    background:var(--surface);
+
+    transform:scaleX(0);
+    transform-origin:left;
+    animation: expand-bg 0.25s ease forwards;
+}
+
+@keyframes expand-bg {
+    to {
+        transform:scaleX(1);
+    }
+}
+
+.favgrid:has(.fav-card.expanded) .fav-card:not(.expanded), 
+.favgrid:has(.fav-card.expanded) .fav-descr{
+    opacity:0;
+    pointer-events:none;
+}
+
+.fav-featured {
+    display:grid;
+    grid-template-rows: 0fr;
+    opacity:0;
+    width:0;
+    overflow:hidden;
+
+    transition: all 0.4s ease;
+}
+
+.fav-card.expanded .fav-featured {
+    grid-template-rows: 1fr;
+    opacity:1;
+    width:650px;
+
+
+}
+
+.fav-banner {
+    width:600px;
+    height:350px;
+    overflow: hidden;
+    border-radius:12px;
+    position: relative;
+
+    margin:20px auto;
+
+
+
+}
+
+.fav-banner-img {
+    position: absolute;
+    inset:0;
+    margin:0 auto;
+
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+    display:block;
+}
+
+.fav-banner::after {
+    content: "";
+    position:absolute;
+    inset:0;
+
+    border:0.5px solid var(--border);
+
+    background: linear-gradient(
+        90deg,
+        rgba(16,13,20,0.95),
+        rgba(16,13,20,0.3)
+    );
+}
+
+
+.fav-banner::after:hover {
+    border:1px solid var(--orange);
+}
+
+.fav-banner-content {
+    position:absolute;
+    z-index:2;
+    bottom:25px;
+}
+
+.fav-card.expanded {
+    display:grid;
+    grid-template-columns: 200px minmax(0,1fr);
+    width:min(850px, 85vw);
+    align-items: start;
+}
+
+.fav-card.expanded .fav-info {
+    grid-column:1;
+    grid-row:2;
+}
+
+.fav-card.expanded .fav-poster {
+    grid-column:1;
+    grid-row:1;
 }
