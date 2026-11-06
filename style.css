@@ -424,6 +424,12 @@ hr {
 }
 
 .fav-card {
+    display:grid;
+    grid-template-columns: mixmax(0,1fr) 0fr;
+    width:100%;
+    max-height: none;
+    align-items: stretch;
+
     cursor:pointer;
     position:relative;
     isolation: isolate;
@@ -618,27 +624,13 @@ hr {
 }
 
 .fav-card.expanded {
+    display: grid;
+    grid-template-columns: 200px minmax(0,1fr);
+    width: min(850px, 85vw);
+    max-height:none;
+
     width:100%;
     z-index:10;
-}
-
-.fav-card.expanded::before {
-    content:"";
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-
-    width:85vw;
-
-    border-radius:inherit;
-
-    z-index:-1;
-    background:var(--surface);
-
-    transform:scaleX(0);
-    transform-origin:left;
-    animation: expand-bg 0.25s ease forwards;
 }
 
 @keyframes expand-bg {
@@ -647,10 +639,11 @@ hr {
     }
 }
 
-.favgrid:has(.fav-card.expanded) .fav-card:not(.expanded), 
-.favgrid:has(.fav-card.expanded) .fav-descr{
+.favgrid:has(.fav-card.expanded) .fav-card:not(.expanded) {
     opacity:0;
     pointer-events:none;
+
+    transition: opacity 0.2s ease;
 }
 
 .fav-featured {
@@ -664,21 +657,22 @@ hr {
 }
 
 .fav-card.expanded .fav-featured {
-    grid-template-rows: 1fr;
     opacity:1;
-    width:650px;
+    visibility: visible;
 
+    transition: all 0.3s ease
 
 }
 
 .fav-banner {
-    width:600px;
-    height:350px;
+    width:100%;
+    height:100%;
+    max-height:450px;
     overflow: hidden;
-    border-radius:12px;
+    border-radius:0 7px 7px 0;
     position: relative;
 
-    margin:20px auto;
+    margin: 0;
 
 
 
@@ -687,7 +681,6 @@ hr {
 .fav-banner-img {
     position: absolute;
     inset:0;
-    margin:0 auto;
 
 
     width:100%;
@@ -702,7 +695,8 @@ hr {
     position:absolute;
     inset:0;
 
-    border:0.5px solid var(--border);
+    border:1px solid var(--border);
+    border-radius: inherit;
 
     background: linear-gradient(
         90deg,
@@ -720,6 +714,11 @@ hr {
     position:absolute;
     z-index:2;
     bottom:25px;
+
+    left:25px;
+    right:20px;
+
+    text-align: left;
 }
 
 .fav-card.expanded {
@@ -737,4 +736,43 @@ hr {
 .fav-card.expanded .fav-poster {
     grid-column:1;
     grid-row:1;
+
+    overflow: hidden;
+    border-radius: 7px 0 0;
+}
+
+.fav-card.expanded img {
+    border-radius:inherit;
+}
+
+.fav-card .fav-poster {
+    grid-column:1;
+    grid-row:1;
+    min-width:0;
+}
+
+.fav-card .fav-info {
+    grid-column:1;
+    grid-row:2;
+}
+
+.fav-featured {
+    grid-column:2;
+    grid-row: 1 / span 2;
+
+    min-width: 0;
+    width:100%;
+    min-height:0;
+
+    opacity:0;
+    visibility: hidden;
+    overflow:hidden;
+
+    transition: opacity 0.25s ease, visibility 0s linear 0.4s;
+}
+
+
+.favgrid:has(.fav-card.expanded) .fav-card:not(.expanded) .fav-descr{
+    opacity:0;
+    pointer-events: none;
 }
