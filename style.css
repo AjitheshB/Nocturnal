@@ -185,6 +185,11 @@ header, main {
     transition:all 0.2s ease;
 }
 
+.banner-img {
+    min-height:200px;
+    min-width:600px;
+}
+
 .hero img {
     min-width:550px;
     min-height:550px;
@@ -875,3 +880,4 @@ hr {
     font-family:'Cormorant Garamond', serif;
 
 }
+
