@@ -172,12 +172,30 @@ header, main {
     max-width:600px;
 }
 
-.hero img {
+.hero img, .banner-img {
     border-radius:16px;
     outline:3px double rgba(255,255,255);
     outline-offset: 6px;
 
     margin-top:30px;
+
+    max-width:600px;
+    max-height:400px;
+
+    transition:all 0.2s ease;
+}
+
+.hero img {
+    min-width:550px;
+    min-height:550px;
+
+    max-height:none !important;
+    max-width:none !important;
+}
+
+.banner-img:hover {
+    outline-color:var(--orange);
+    transform:translateY(-10px);
 }
 
 .explore-btn, .about-btn {
@@ -327,7 +345,8 @@ hr {
 
 .movie-genres {
     font-weight:500;
-    font-family:monospace;
+    font-family:'Cinzel', serif;
+    margin:10px 0 15px;
 }
 
 .discover {
@@ -349,7 +368,7 @@ hr {
 }
 
 .movie-card:hover {
-    transform:translateY(-6px) scale(1.05);
+    transform:translateY(-20px) scale(1.0);
     border-color:var(--orange);
 
 }
@@ -604,6 +623,7 @@ hr {
 
 .fav-descr {
     margin-top:8px;
+    font-family:monospace;
     transition:all 0.2s ease;
 }
 
@@ -778,4 +798,28 @@ hr {
 }
 .favgrid .fav-card {
     visibility: visible;
+}
+
+.movie-descr {
+    margin-top:10px;
+    font-family:monospace;
+}
+
+.abt-me-logo {
+    font-size:18px;
+    margin-right:0;
+    padding:0;
+}
+
+.nav-wrap {
+    position: sticky;
+    top:0;
+    z-index:1000;
+    width:100%;
+    background:rgba(16,13,20,0.7);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--border);
+    padding-bottom:20px;
 }

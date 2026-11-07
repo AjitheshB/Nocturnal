@@ -49,6 +49,12 @@ function displayMovies(movieList) {
                     ${movie.genres.join(" · ")}
                 </p>
 
+                <hr width="40%">
+
+                <p class="movie-descr">
+                    ${movie.description || ""}
+                </p>
+
             </div>
         </article>
         `).join("")
