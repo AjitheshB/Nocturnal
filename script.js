@@ -22,6 +22,12 @@ async function loadMovies() {
 const movieGrid = document.querySelector("#movie-grid")
 
 function displayMovies(movieList) {
+    if (movieList.length === 0) {
+        movieGrid.innerHTML = `<p class=no-results> Too dark out here... We found nothing :(</p>`
+        return
+    }
+
+
     movieGrid.innerHTML = movieList.map(movie => `
         <article class="movie-card">
 
@@ -130,3 +136,15 @@ function displayFav(movieList) {
     
 }
 loadMovies()
+
+const searchIp = document.querySelector("#movie-search")
+
+searchIp.addEventListener("input", () => {
+    const inputdata = searchIp.value.trim().toLowerCase()
+
+    const results = movies.filter(movie =>
+        movie.title.toLowerCase().includes(inputdata)
+    )
+
+    displayMovies(results)
+})

@@ -196,6 +196,7 @@ header, main {
 .banner-img:hover {
     outline-color:var(--orange);
     transform:translateY(-10px);
+    filter:brightness(1.4);
 }
 
 .explore-btn, .about-btn {
@@ -822,4 +823,55 @@ hr {
 
     border-bottom: 1px solid var(--border);
     padding-bottom:20px;
+}
+
+.movie-search {
+    margin:16px;
+}
+
+.movie-search input::placeholder {
+    color: #f08a43;
+    opacity: 1;
+}
+
+.movie-search input:focus {
+    outline: none;
+    border-color: var(--purple);
+    box-shadow :0 0 12px #f08a4330;
+}
+
+.movie-search input {
+    background:var(--surface);
+    border-radius:12px;
+    padding:6px 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:700;
+    color:#f08a43;
+    caret-color: #f08a43;
+    font-style:italic;
+    font-size:18px;
+
+    border:2px solid var(--border);
+
+    transition:all 0.2s ease;
+
+}
+
+.movie-search input:hover {
+    border-color:var(--orange-light);
+}
+
+.no-results {
+    text-align: center;
+    grid-column: 1 / -1;
+    
+    color: var(--purple);
+    font-weight:600;
+    font-size:18px;
+    margin:0px auto;
+    padding:30px 0;
+    font-style:italic;
+
+    font-family:'Cormorant Garamond', serif;
+
 }
