@@ -419,13 +419,14 @@ hr {
     display:grid;
     grid-template-columns: repeat(5,minmax(0,1fr));
     gap:58px;
+    align-items: start;
 
     width:100%;
 }
 
 .fav-card {
     display:grid;
-    grid-template-columns: mixmax(0,1fr) 0fr;
+    grid-template-columns: minmax(0,1fr) 0fr;
     width:100%;
     max-height: none;
     align-items: stretch;
@@ -435,7 +436,6 @@ hr {
     isolation: isolate;
     
     min-width: 0;
-    max-height:750px;
 
     background:rgba(27,22,33,0.85);
 
@@ -445,7 +445,7 @@ hr {
     overflow:visible;
 
     z-index:1;
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .fav-card:hover {
@@ -496,7 +496,7 @@ hr {
     left: -60px;
     -webkit-text-stroke: 2px var(--orange-light);
     margin-right:15px;
-    z-index:1000;
+    z-index:3;
 
     color:var(--red);
 }
@@ -624,12 +624,14 @@ hr {
 }
 
 .fav-card.expanded {
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 200px minmax(0,1fr);
-    width: min(850px, 85vw);
+    width: 100%;
+    min-width:0;
     max-height:none;
 
-    width:100%;
+    align-items:stretch;
     z-index:10;
 }
 
@@ -643,10 +645,11 @@ hr {
     opacity:0;
     pointer-events:none;
 
-    transition: opacity 0.2s ease;
 }
 
 .fav-featured {
+    visibility:hidden;
+    transform: translateX(12px);
     display:grid;
     grid-template-rows: 0fr;
     opacity:0;
@@ -660,14 +663,15 @@ hr {
     opacity:1;
     visibility: visible;
 
-    transition: all 0.3s ease
+    transition: opacity 0.3s ease 0.1s, visibility 0s;
 
 }
 
 .fav-banner {
     width:100%;
     height:100%;
-    max-height:450px;
+    min-height:450px;
+    max-height:none;
     overflow: hidden;
     border-radius:0 7px 7px 0;
     position: relative;
@@ -737,12 +741,8 @@ hr {
     grid-column:1;
     grid-row:1;
 
-    overflow: hidden;
+    overflow: visible;
     border-radius: 7px 0 0;
-}
-
-.fav-card.expanded img {
-    border-radius:inherit;
 }
 
 .fav-card .fav-poster {
@@ -762,7 +762,7 @@ hr {
 
     min-width: 0;
     width:100%;
-    min-height:0;
+    min-height:450;
 
     opacity:0;
     visibility: hidden;
@@ -775,4 +775,7 @@ hr {
 .favgrid:has(.fav-card.expanded) .fav-card:not(.expanded) .fav-descr{
     opacity:0;
     pointer-events: none;
+}
+.favgrid .fav-card {
+    visibility: visible;
 }

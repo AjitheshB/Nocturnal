@@ -124,7 +124,3 @@ function displayFav(movieList) {
     
 }
 loadMovies()
-
-function toggleFav(card) {
-    card.classList.toggle("expanded")
-}
