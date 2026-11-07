@@ -16,30 +16,30 @@ Enjoy!
 
 ### Browse our film collection
 
-![alt text](image-1.png)
+![alt text](assets/readme/image-1.png)
 
 ### Search for movies
 
-![alt text](image-2.png)
+![alt text](assets/readme/image-2.png)
 
 ### Watch our favorites - Take a break from the Horror
 
-![alt text](image-3.png)
+![alt text](assets/readme/image-3.png)
 
 ### MORE than just movies
 
-![alt text](image-4.png)
+![alt text](assets/readme/image-4.png)
 
 ### Vast Horror Collection
-![alt text](image-5.png)
+![alt text](assets/readme/image-5.png)
 
-![alt text](image-6.png)
+![alt text](assets/readme/image-6.png)
 
-![alt text](image-7.png)
+![alt text](assets/readme/image-7.png)
 
-![alt text](image-8.png)
+![alt text](assets/readme/image-8.png)
 
-![alt text](image-9.png)
+![alt text](assets/readme/image-9.png)
 
 ---
 
