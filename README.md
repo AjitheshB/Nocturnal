@@ -1,8 +1,8 @@
 # NOCTURNAL - The Halloween Film Browser
 
-#### Browser films and choose your next halloween spooky watch!
+#### Browsee films and choose your next halloween spooky watch!
 
-Browse films to watch during the spooky season with a discover section with 20+ movies, a reccomendation section with 5 of our top picks and an about us section for you to get to know us better.
+Browse films to watch during the spooky season with a discover section with 20+ movies, a recommendation section with 5 of our top picks and an about us section for you to get to know us better.
 
 Enjoy!
 
