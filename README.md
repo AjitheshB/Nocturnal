@@ -12,7 +12,7 @@ Enjoy!
 
 ### Homepage
 
-![alt text](image.png)
+![alt text](assets/readme/image.png)
 
 ### Browse our film collection
 
