@@ -2,11 +2,15 @@
 
 #### Browser films and choose your next halloween spooky watch!
 
-Made using HTML, CSS and JS
+Browse films to watch during the spooky season with a discover section with 20+ movies, a reccomendation section with 5 of our top picks and an about us section for you to get to know us better.
+
+Enjoy!
+
+##### Made using HTML, CSS and JS
 
 ---
 
-### A real spooky vibe
+### Homepage
 
 ![alt text](image.png)
 
