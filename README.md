@@ -18,7 +18,7 @@ Made using HTML, CSS and JS
 
 ![alt text](image-2.png)
 
-### Watch our favorites
+### Watch our favorites - Take a break from the Horror
 
 ![alt text](image-3.png)
 
@@ -63,3 +63,8 @@ I also added a normal movies section for the favorites so I had a say in this...
 well, I guess that's about it...
 
 ![alt text](assets/readme/logo.png)
+
+made for Hackclub Terra
+
+---
+nocturnal
